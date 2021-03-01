@@ -20,13 +20,13 @@ export default function Main(): JSX.Element {
 			<h2>NextJS Boilerplate</h2>
 			<div>
 				<StyledLink
-					href="https://github.com/NikSchaefer/nextjs-boilerplate"
+					href="https://github.com/HazimAr/nextjs-boilerplate"
 					aria-label="Github"
 				>
 					<FaGithub size="30px" />
 				</StyledLink>
 				<StyledLink
-					href="https://www.linkedin.com/in/nik-schaefer/"
+					href="https://www.linkedin.com/in/hazim-arafa-a439aa205/"
 					aria-label="LinkedIn"
 				>
 					<FaLinkedin size="30px" />
