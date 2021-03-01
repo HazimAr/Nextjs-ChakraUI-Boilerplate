@@ -13,6 +13,14 @@ const Header = styled.header`
 const StyledLink = styled.a`
 	margin: 0 20px;
 `;
+
+export const headerOptions = [
+	["Home", "/#"],
+	["Services", "/#services"],
+	["Portfolio", "/#portfolio"],
+	["Pricing", "/#pricing"],
+	["Contact", "/contact"],
+];
 // eslint-disable-next-line import/no-default-export
 export default function Main(): JSX.Element {
 	return (

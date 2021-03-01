@@ -1,9 +1,17 @@
 // google analytics measurement id
-const GA_TRACKING_ID = "U-XXXXXX";
+const GA_TRACKING_ID = "";
 const IS_PRODUCTION = process.env.NODE_ENV === "production";
-const IS_TEST = process.env.NODE_ENV === "test";
-const IS_BROWSER = typeof window !== "undefined";
-export { GA_TRACKING_ID, IS_PRODUCTION, IS_TEST, IS_BROWSER };
+
+const COMPANY_NAME = "WebDefyer";
+const COMPANY_EMAIL = "info@mail.webdefyer.com";
+const EMAIL_LIST = "nikkschaefer@gmail.com, hazimarafa69@gmail.com";
+
+const COMPANY_SOCIALS = {
+	instagram: "https://www.instagram.com/webdefyer/",
+	facebook: "https://www.facebook.com/web.defyer",
+	linkedin: "https://www.linkedin.com/company/webdefyer",
+};
+    
 type MetaType = {
     title: string,
     lang: string,
@@ -18,4 +26,13 @@ const META: MetaType = {
     image: "/logo.png",
     url: "https://boilerplate.nikschaefer.tech"
 }
-export { META }
+
+export {
+	COMPANY_SOCIALS,
+	GA_TRACKING_ID,
+	IS_PRODUCTION,
+	COMPANY_NAME,
+	COMPANY_EMAIL,
+	EMAIL_LIST,
+	META,
+};
