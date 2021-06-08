@@ -4,6 +4,7 @@ Proper Readme will follow
 
 ## Stack
 - Typescript
+- ChakraUI
 - NextJS
 - Styled Components
 - Lightweight
@@ -14,7 +15,7 @@ Proper Readme will follow
 ## Setup
 
 Click use this template or clone with
-`git clone https://github.com/NikSchaefer/nextjs-typescript/`
+`git clone https://github.com/HazimAr/Nextjs-ChakraUI-Boilerplate`
 
 install dependicies `npm i` or `yarn`
 
