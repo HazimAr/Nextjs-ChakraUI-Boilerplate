@@ -21,6 +21,7 @@ export const headerOptions = [
 	["Pricing", "/#pricing"],
 	["Contact", "/contact"],
 ];
+
 // eslint-disable-next-line import/no-default-export
 export default function Main(): JSX.Element {
 	return (
@@ -28,7 +29,7 @@ export default function Main(): JSX.Element {
 			<h2>NextJS Boilerplate</h2>
 			<div>
 				<StyledLink
-					href="https://github.com/HazimAr/nextjs-boilerplate"
+					href="https://github.com/HazimAr/"
 					aria-label="Github"
 				>
 					<FaGithub size="30px" />

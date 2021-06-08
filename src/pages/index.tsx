@@ -1,3 +1,4 @@
+import { NextJS, ChakraUI } from "@components/icons";
 import { FaReact } from "react-icons/fa";
 import { GiFeather } from "react-icons/gi";
 import {
@@ -8,8 +9,6 @@ import {
 	SiStyleshare,
 } from "react-icons/si";
 import styled from "styled-components";
-
-import { NextJS } from "../components/icons";
 
 const Container = styled.main`
 	display: flex;
@@ -43,7 +42,7 @@ const Box = styled.div`
 		color: #52baff;
 	}
 `;
-// eslint-disable-next-line import/no-default-export
+
 export default function Home(): JSX.Element {
 	return (
 		<Container>
@@ -56,8 +55,16 @@ export default function Home(): JSX.Element {
 					<SiTypescript size="40px" color="#007acd" />
 					<h2>Typescript</h2>
 					<p>
-						Built to ensure long-term usabilty and a cleaner
+						Built to ensure long-term usability and a cleaner
 						codebase, We use 100% Typescript
+					</p>
+				</Box>
+				<Box>
+					<ChakraUI />
+					<h2>ChakraUI</h2>
+					<p>
+						Using Chakra UI to create accessible React apps with
+						speed
 					</p>
 				</Box>
 				<Box>
@@ -78,7 +85,7 @@ export default function Home(): JSX.Element {
 					<h2>Lightweight</h2>
 					<p>
 						Setting the baseline configurations to provide an
-						accelerated development enviroment
+						accelerated development environment
 					</p>
 				</Box>
 				<Box>
@@ -94,14 +101,15 @@ export default function Home(): JSX.Element {
 					<h2>ESLint</h2>
 					<p>
 						Using a package of 30+ Eslint Plugins to ensure clean
-						code quality and acessibility
+						code quality and accessibility
 					</p>
 				</Box>
 				<Box>
 					<SiJest size="40px" color="red" />
 					<h2>Jest</h2>
-					<p>All tests, integration and unit run throught jest</p>
+					<p>All tests, integration and unit run throughout jest</p>
 				</Box>
+
 				<Box>
 					<FaReact size="40px" color="green" />
 					<h2>React Icons</h2>

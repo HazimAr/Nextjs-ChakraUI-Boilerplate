@@ -2,7 +2,7 @@ import Document, { Html, Head, Main, NextScript } from "next/document";
 import { ServerStyleSheet } from "styled-components";
 
 import { GA_TRACKING_ID, META } from "../config.ts";
-// eslint-disable-next-line import/no-default-export
+
 export default class MyDocument extends Document {
 	static async getInitialProps(ctx) {
 		const sheet = new ServerStyleSheet();
@@ -33,7 +33,6 @@ export default class MyDocument extends Document {
 		return (
 			<Html lang='en-us'>
 				<Head>
-					<title>NextJS Boilerplate | Nik Schaefer</title>
 					<meta
 						name="description"
 						content={META.description}

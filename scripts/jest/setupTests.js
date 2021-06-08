@@ -1,4 +1,4 @@
-// eslint-disable-next-line jest/require-top-level-describe
+
 afterEach(() => {
 	window.localStorage.clear();
 

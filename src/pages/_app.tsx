@@ -2,12 +2,12 @@ import "@styles/global.css";
 import Footer from "@components/footer";
 import Header from "@components/header";
 import { pageview } from "@lib/gtag";
+import { META } from "config";
 import type { AppProps } from "next/app";
 import Head from "next/head";
 import { useRouter } from "next/router";
 import { useEffect } from "react";
 
-// eslint-disable-next-line import/no-default-export
 export default function MyApp({ Component, pageProps }: AppProps): JSX.Element {
 	const router = useRouter();
 	useEffect(() => {
@@ -22,7 +22,7 @@ export default function MyApp({ Component, pageProps }: AppProps): JSX.Element {
 	return (
 		<>
 			<Head>
-				<title>NextJS Boilerplate | Nik Schaefer</title>
+				<title>{META.title}</title>
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 
