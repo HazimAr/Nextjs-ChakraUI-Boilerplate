@@ -26,13 +26,13 @@ export default function MyApp({ Component, pageProps }: AppProps): JSX.Element {
 				<title>{META.title}</title>
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
-			<ChakraProvider>
+			{/* <ChakraProvider> */}
 				<Header />
 
 				<Component {...pageProps} />
 
 				<Footer />
-			</ChakraProvider>
+			{/* </ChakraProvider> */}
 		</>
 	);
 }
