@@ -1,4 +1,5 @@
 import "@styles/global.css";
+import { ChakraProvider } from "@chakra-ui/react";
 import Footer from "@components/footer";
 import Header from "@components/header";
 import { pageview } from "@lib/gtag";
@@ -25,12 +26,13 @@ export default function MyApp({ Component, pageProps }: AppProps): JSX.Element {
 				<title>{META.title}</title>
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
+			<ChakraProvider>
+				<Header />
 
-			<Header />
+				<Component {...pageProps} />
 
-			<Component {...pageProps} />
-
-			<Footer />
+				<Footer />
+			</ChakraProvider>
 		</>
 	);
 }
