@@ -1,7 +1,7 @@
-import "@styles/global.css";
-// import { ChakraProvider } from "@chakra-ui/react";
+import { ChakraProvider } from "@chakra-ui/react";
 import Footer from "@components/footer";
 import Header from "@components/header";
+import theme from "@components/theme";
 import { pageview } from "@lib/gtag";
 import { META } from "config";
 import type { AppProps } from "next/app";
@@ -26,13 +26,13 @@ export default function MyApp({ Component, pageProps }: AppProps): JSX.Element {
 				<title>{META.title}</title>
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
-			{/* <ChakraProvider> */}
+			<ChakraProvider theme={theme}>
 				<Header />
 
 				<Component {...pageProps} />
 
 				<Footer />
-			{/* </ChakraProvider> */}
+			</ChakraProvider>
 		</>
 	);
 }
