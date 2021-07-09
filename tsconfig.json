@@ -23,7 +23,6 @@
 			"@styles/*": ["styles/*"],
 			"@utils/*": ["utils/*"],
 			"@lib/*": ["lib/*"],
-			"@src/*": ["/*"],
 			"@pages/*": ["pages/*"]
 		}
 	},
