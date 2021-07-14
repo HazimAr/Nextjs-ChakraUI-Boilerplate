@@ -1,12 +1,13 @@
-import Link from "next/link";
+import { Heading, Link } from "@chakra-ui/react";
+
 
 export default function FourOhFour(): JSX.Element {
 	return (
 		<>
-			<h1>404 Page not Found</h1>
-			<h3>Edit this page in /src/pages/404</h3>
+			<Heading as="h1">404 Page not Found</Heading>
+			<Heading as="h3">Edit this page in /src/pages/404</Heading>
 			<Link href="/">
-				<a>Go back home</a>
+				Go back home
 			</Link>
 		</>
 	);
