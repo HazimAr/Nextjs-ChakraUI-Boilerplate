@@ -1,12 +1,9 @@
-import { NextJS, ChakraUI } from "@components/icons";
+import { ChakraUI, NextJS } from "@components/icons";
 import { FaReact } from "react-icons/fa";
 import { GiFeather } from "react-icons/gi";
 import {
-	SiTypescript,
-	SiGoogleanalytics,
-	SiEslint,
-	SiJest,
-	SiStyleshare,
+	SiEslint, SiGoogleanalytics, SiJest,
+	SiStyleshare, SiTypescript
 } from "react-icons/si";
 import styled from "styled-components";
 

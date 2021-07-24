@@ -17,7 +17,8 @@
 		"build": "next build",
 		"start": "next start",
 		"clean": "npx prettier --write .",
-		"test": "jest"
+		"test": "jest",
+		"kill": "taskkill /f /im node.exe"
 	},
 	"dependencies": {
 		"@babel/core": "^7.14.6",
@@ -37,10 +38,8 @@
 		"@babel/preset-typescript": "^7.14.5",
 		"@types/babel__core": "^7.1.15",
 		"@types/jest": "^26.0.24",
-		"@types/next": "^9.0.0",
 		"@types/node": "^16.4.1",
 		"@types/react": "^17.0.14",
-		"@types/react-icons": "^3.0.0",
 		"@types/styled-components": "^5.1.11",
 		"babel-plugin-styled-components": "^1.13.2",
 		"eslint": "^7.31.0",
