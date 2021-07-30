@@ -12,6 +12,7 @@ const Header = styled.header`
 	justify-content: space-between;
 	align-items: center;
 `;
+
 // eslint-disable-next-line import/no-default-export
 export default function Main(): JSX.Element {
 	return (
