@@ -12,10 +12,6 @@ const Header = styled.header`
 	justify-content: space-between;
 	align-items: center;
 `;
-const StyledLink = styled.a`
-	margin: 0 20px;
-`;
-
 // eslint-disable-next-line import/no-default-export
 export default function Main(): JSX.Element {
 	return (
