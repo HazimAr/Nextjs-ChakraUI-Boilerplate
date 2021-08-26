@@ -15,7 +15,7 @@
 		"noUnusedParameters": true,
 		"resolveJsonModule": true,
 		"skipLibCheck": true,
-		"strict": true,
+		"strict": false,
 		"allowSyntheticDefaultImports": true,
 		"baseUrl": "src",
 		"paths": {
@@ -30,8 +30,8 @@
 	"include": [
 		"**/*.ts",
 		"**/*.tsx",
-		"src/pages/_document.js",
+		"src/pages/_document.tsx",
 		"src/pages/_error.js",
-		"src/lib/gtag.js"
+		"src/lib/gtag.ts"
 	]
 }
