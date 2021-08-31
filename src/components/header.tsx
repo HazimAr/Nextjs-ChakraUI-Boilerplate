@@ -1,23 +1,19 @@
-import { HStack } from "@chakra-ui/react";
+import { Heading, HStack } from "@chakra-ui/react";
 import NextChakraLink from "@components/nextChakraLink";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
-import styled from "styled-components";
-
-const Header = styled.header`
-	background-color: #1a202c;
-	padding: 5px 50px;
-	display: flex;
-	box-sizing: border-box;
-	border-top: 5px #5cfff1 solid;
-	justify-content: space-between;
-	align-items: center;
-`;
 
 // eslint-disable-next-line import/no-default-export
 export default function Main(): JSX.Element {
 	return (
-		<Header>
-			<h2>NextJS Boilerplate</h2>
+		<HStack
+			borderTop="5px #5cfff1 solid"
+			justify="space-between"
+			bg="#1a202c"
+			px="50px"
+			py="10px"
+			as="header"
+		>
+			<Heading>NextJS Boilerplate</Heading>
 			<HStack justify="center" align="center">
 				<NextChakraLink
 					href="https://github.com/HazimAr/"
@@ -32,6 +28,6 @@ export default function Main(): JSX.Element {
 					<FaLinkedin size="30px" />
 				</NextChakraLink>
 			</HStack>
-		</Header>
+		</HStack>
 	);
 }
