@@ -8,12 +8,12 @@ export default class MyDocument extends Document {
 			<Html lang="en-us">
 				<Head>
 					<meta name="description" content={META.description} />
+					<meta name="author" content="https://webdefy.tech" />
+					<meta name="keywords" content={META.tags.join(",")} />
 
 					<meta itemProp="name" content={META.title} />
 					<meta itemProp="description" content={META.description} />
 					<meta itemProp="image" content={META.image} />
-					<meta name="author" content="https://webdefy.tech"/>
-					<meta name="keywords" content={META.tags.join(",")} />
 
 					<meta property="og:url" content={META.url} />
 					<meta property="og:type" content="website" />
