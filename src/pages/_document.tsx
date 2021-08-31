@@ -12,6 +12,7 @@ export default class MyDocument extends Document {
 					<meta itemProp="name" content={META.title} />
 					<meta itemProp="description" content={META.description} />
 					<meta itemProp="image" content={META.image} />
+					<meta name="author" content="https://webdefy.tech"/>
 					<meta name="keywords" content={META.tags.join(",")} />
 
 					<meta property="og:url" content={META.url} />
