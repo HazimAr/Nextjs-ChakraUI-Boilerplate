@@ -1,4 +1,4 @@
-import { Box, Heading, HStack, Text, VStack } from "@chakra-ui/react";
+import { Box, Flex, Heading, Text, VStack } from "@chakra-ui/react";
 import { ChakraUI, NextJS } from "@components/icons";
 import { FaReact } from "react-icons/fa";
 import { GiFeather } from "react-icons/gi";
@@ -11,7 +11,7 @@ export default function Home(): JSX.Element {
 				<Heading>Hello, World!</Heading>
 			</VStack>
 			<Heading>Stack</Heading>
-			<HStack flexWrap="wrap" maxW="1300px" justify="center" spacing={0}>
+			<Flex flexWrap="wrap" maxW="1300px" justify="center">
 				<Card>
 					<SiTypescript size="40px" color="#007acd" />
 					<Heading color="#52baff">Typescript</Heading>
@@ -78,7 +78,7 @@ export default function Home(): JSX.Element {
 						</a>
 					</p>
 				</Card>
-			</HStack>
+			</Flex>
 		</VStack>
 	);
 }
@@ -89,9 +89,10 @@ function Card({ children }) {
 			maxW="370px"
 			w="100%"
 			maxH="400px"
-			h="200px"
+			h="250px"
 			boxSizing="border-box"
 			p="40px"
+			m="20px"
 			position="relative"
 			bg="#2e3748"
 			rounded="10px"
