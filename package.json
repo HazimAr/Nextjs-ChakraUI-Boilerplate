@@ -21,7 +21,7 @@
 		"kill": "taskkill /f /im node.exe"
 	},
 	"dependencies": {
-		"@babel/core": "^7.15.0",
+		"@babel/core": "^7.15.5",
 		"@chakra-ui/icons": "^1.0.15",
 		"@chakra-ui/react": "^1.6.7",
 		"@emotion/react": "^11.4.1",
