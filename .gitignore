@@ -31,6 +31,4 @@ yarn-error.log*
 # vercel
 .vercel
 
-part1
-part2
-part3
+parts
