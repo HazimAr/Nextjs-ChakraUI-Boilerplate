@@ -1,6 +1,5 @@
 // google analytics measurement id
 const GA_TRACKING_ID = "";
-const IS_PRODUCTION = process.env.NODE_ENV === "production";
 
 type MetaType = {
 	title: string;
@@ -21,4 +20,4 @@ const META: MetaType = {
 	tags: ["nextjs", "typescript", "chakraui", "google analytics", "eslint", "jest", "styled components", "icons"]
 };
 
-export { GA_TRACKING_ID, IS_PRODUCTION, META };
+export { GA_TRACKING_ID, META };
