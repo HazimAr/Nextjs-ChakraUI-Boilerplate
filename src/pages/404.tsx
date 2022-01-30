@@ -1,6 +1,6 @@
 import { Heading, Link } from "@chakra-ui/react";
 
-export default function FourOhFour(): JSX.Element {
+export default function FourOhFour() {
 	return (
 		<>
 			<Heading as="h1">404 Page not Found</Heading>

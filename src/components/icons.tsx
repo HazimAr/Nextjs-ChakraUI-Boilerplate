@@ -1,4 +1,4 @@
-function NextJS(): JSX.Element {
+function NextJS() {
 	return (
 		<svg
 			height="60"
@@ -11,7 +11,7 @@ function NextJS(): JSX.Element {
 	);
 }
 
-function ChakraUI(): JSX.Element {
+function ChakraUI() {
 	return (
 		<svg viewBox="0 0 998 257" xmlns="http://www.w3.org/2000/svg">
 			<rect width="257" height="257" rx="128.5" fill="url(#logo)" />

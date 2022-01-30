@@ -2,8 +2,8 @@ import { Heading, HStack } from "@chakra-ui/react";
 import NextChakraLink from "@components/nextChakraLink";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 
-// eslint-disable-next-line import/no-default-export
-export default function Main(): JSX.Element {
+
+export default function Main() {
 	return (
 		<HStack
 			borderTop="5px #5cfff1 solid"

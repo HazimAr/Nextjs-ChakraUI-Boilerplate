@@ -4,7 +4,7 @@ import { FaReact } from "react-icons/fa";
 import { GiFeather } from "react-icons/gi";
 import { SiEslint, SiGoogleanalytics, SiTypescript } from "react-icons/si";
 
-export default function Home(): JSX.Element {
+export default function Home() {
 	return (
 		<VStack>
 			<VStack justify="center" minH="600px">

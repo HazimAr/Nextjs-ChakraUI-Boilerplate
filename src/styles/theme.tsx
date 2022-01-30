@@ -1,12 +1,9 @@
-/* eslint-disable import/no-default-export */
 import { extendTheme } from "@chakra-ui/react";
 
 const theme = extendTheme({
 	colors: {
-		brand: {
-			secondary: "#171a23",
-			primary: "#5cfff1",
-		},
+		secondary: "#171a23",
+		primary: "#5cfff1",
 	},
 	styles: {
 		global: () => ({
