@@ -17,7 +17,7 @@ const theme = extendTheme({
 				lineHeight: "base",
 				padding: 0,
 				margin: 0,
-				backgroundColor: "brand.secondary",
+				backgroundColor: "secondary",
 			},
 			a: {
 				color: "inherit",
@@ -34,7 +34,7 @@ const theme = extendTheme({
 				background: "transparent",
 			},
 			"&::-webkit-scrollbar-thumb": {
-				background: "brand.primary",
+				background: "primary",
 				borderRadius: "50px",
 			},
 		}),
