@@ -6,11 +6,8 @@ Proper Readme will follow
 - Typescript
 - ChakraUI
 - NextJS
-- Styled Components
 - Lightweight
 - Google Analytics
-- ESLint
-- Jest
 - React Icons
 ## Setup
 

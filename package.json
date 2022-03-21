@@ -15,10 +15,7 @@
 	"scripts": {
 		"dev": "next dev",
 		"build": "next build",
-		"start": "next start",
-		"clean": "npx prettier --write .",
-		"test": "jest",
-		"kill": "taskkill /f /im node.exe"
+		"start": "next start"
 	},
 	"dependencies": {
 		"@chakra-ui/icons": "^1.1.7",

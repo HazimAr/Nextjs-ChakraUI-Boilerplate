@@ -7,24 +7,11 @@ const theme = extendTheme({
 	},
 	styles: {
 		global: () => ({
-			html: {
-				height: "100%",
-			},
 			body: {
 				fontFamily:
 					"-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif",
 				color: "white",
-				lineHeight: "base",
-				padding: 0,
-				margin: 0,
 				backgroundColor: "secondary",
-			},
-			a: {
-				color: "inherit",
-				textDecoration: "none",
-			},
-			ul: {
-				listStyle: "none",
 			},
 			"&::-webkit-scrollbar": {
 				width: "0.6em",
