@@ -2,9 +2,8 @@ import Document, { Html, Head, Main, NextScript } from "next/document";
 
 import { GA_TRACKING_ID, META } from "config";
 
-export default class MyDocument extends Document {
-  render() {
-    return (
+export default function Document() {
+  return (
       <Html lang="en-us">
         <Head>
           <meta name="description" content={META.description} />
@@ -37,6 +36,5 @@ export default class MyDocument extends Document {
           <NextScript />
         </body>
       </Html>
-    );
-  }
+  );
 }
