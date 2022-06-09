@@ -13,7 +13,10 @@ export default function MyApp({ Component, pageProps }: AppProps) {
   const router = useRouter();
   useEffect(() => {
     const handleRouteChange = (url: unknown) => {
-      pageview(url);
+      // @ts-ignore
+      window.gtag("config", GA_TRACKING_ID, {
+        page_location: url,
+      });
     };
     router.events.on("routeChangeComplete", handleRouteChange);
     return () => {
