@@ -1,16 +1,7 @@
 // google analytics measurement id
 const GA_TRACKING_ID = "";
 
-type MetaType = {
-	title: string;
-	lang: string;
-	description: string;
-	url: string;
-	image: string;
-	tags: string[];
-};
-
-const META: MetaType = {
+const META = {
 	title: "NextJS ChakraUI Template | Hazim Arafa",
 	lang: "en-us",
 	description:
