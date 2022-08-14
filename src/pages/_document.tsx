@@ -1,39 +1,47 @@
 import { Html, Head, Main, NextScript } from "next/document";
+import { DefaultSeo } from "next-seo";
 
-import { GA_TRACKING_ID, META } from "config";
+// google analytics measurement id
+const GA_TRACKING_ID = "";
 
 export default function Document() {
   return (
-      <Html lang="en-us">
-        <Head>
-          <meta name="description" content={META.description} />
-          <meta name="author" content="https://hazim.tech" />
+    <Html lang="en-us">
+      <Head>
+        <DefaultSeo
+          title="NextJS ChakraUI Template | Hazim Arafa"
+          description="Boilerplate built to scale containing Typescript + NextJS + ChakraUI + Google Analytics + ESLint + Jest + Styled Components + Icons"
+          openGraph={{
+            type: "website",
+            url: "https://boilerplate.hazim.tech",
+            images: [
+              {
+                url: "/logo.png",
+                type: "image",
+                alt: "logo",
+              },
+            ],
+          }}
+          twitter={{
+            cardType: "summary_large_image",
+          }}
+        />
+        <link rel="icon" href="/favicon.ico" />
 
-          <meta itemProp="name" content={META.title} />
-          <meta itemProp="description" content={META.description} />
-          <meta itemProp="image" content={META.image} />
-
-          <meta property="og:url" content={META.url} />
-          <meta property="og:type" content="website" />
-          <meta property="og:title" content={META.title} />
-          <meta property="og:description" content={META.description} />
-          <meta property="og:image" content={META.image} />
-
-          <meta name="twitter:card" content="summary_large_image" />
-          <meta name="twitter:title" content={META.title} />
-          <meta name="twitter:description" content={META.description} />
-          <meta name="twitter:image" content={META.image} />
-
-          <script
-            async
-            src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
-          />
-          <script dangerouslySetInnerHTML={{__html: `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','${GA_TRACKING_ID}',{page_path: window.location.pathname});`,}} />
-        </Head>
-        <body>
-          <Main />
-          <NextScript />
-        </body>
-      </Html>
+        <script
+          async
+          src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
+        />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','${GA_TRACKING_ID}',{page_path:window.location.pathname});`,
+          }}
+        />
+      </Head>
+      <body>
+        <Main />
+        <NextScript />
+      </body>
+    </Html>
   );
 }
