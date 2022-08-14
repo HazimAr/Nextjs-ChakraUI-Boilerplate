@@ -5,6 +5,7 @@ import theme from "@styles/theme";
 import type { AppProps } from "next/app";
 import { useRouter } from "next/router";
 import { useEffect } from "react";
+import { GA_TRACKING_ID } from "./_document";
 
 export default function MyApp({ Component, pageProps }: AppProps) {
   const router = useRouter();

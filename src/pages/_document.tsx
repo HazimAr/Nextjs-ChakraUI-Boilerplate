@@ -2,7 +2,7 @@ import { Html, Head, Main, NextScript } from "next/document";
 import { DefaultSeo } from "next-seo";
 
 // google analytics measurement id
-const GA_TRACKING_ID = "";
+export const GA_TRACKING_ID = "";
 
 export default function Document() {
   return (
