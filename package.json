@@ -22,7 +22,7 @@
 		"@chakra-ui/react": "^2.2.8",
 		"@emotion/react": "^11.10.0",
 		"@emotion/styled": "^11.10.0",
-		"framer-motion": "^7.2.0",
+		"framer-motion": "^7.5.0",
 		"next": "^12.2.5",
 		"next-seo": "^5.5.0",
 		"react": "^18.1.0",
